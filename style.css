@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    margin: 0;
+}
+
+.titulo {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #14068e 20%, #ff5e69 60%, #ff8a56 80%, #ffa84b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.container {
+    background-color: #fff;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+.form {
+    padding: 10px 20px;
+}
+
+.campo-formulario input {
+    border: solid 2px #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.campo-formulario input:focus {
+    outline: none;
+}
+
+.campo-formulario {
+    margin-bottom: 5px;
+}
+
+.campo-formulario label {
+    display: block;
+    color:black;
+    margin-bottom: 5px;
+}
+
+.campo-formulario.error input {
+    border-color:var(--error-color);
+}
+
+.campo-formulario.success input {
+    border-color:var(--success-color);
+}
+
+.campo-formulario small {
+    color: var(--error-color);
+}
+
+.input-group {
+    position: relative;
+}
+
+.bi-eye-slash {
+    position: absolute;
+    top: 8px;
+    right: 5%;
+    cursor: pointer;
+}
+
+.btn {
+    width: 75%;
+    padding: 3%;
+    border-radius: 20px;
+    z-index: auto;
+    background: #ffa84b;
+    background-image: linear-gradient(to right, #14068e 20%, #ff5e69 60%, #ff8a56 80%, #ffa84b);
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
